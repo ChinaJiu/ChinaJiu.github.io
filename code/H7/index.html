@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <title>一湖一院三千年</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript">
+        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                var phoneScale = parseInt(window.screen.width)/640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+</head>
+<body>
+
+<div class="loading">
+    <div class="loadingtxt">0%</div>
+</div>
+
+<div class="main hide">
+    <div class="page" id="page">
+
+       <div class="page1">
+
+           <div class="p1-1 hide"></div>
+           <div class="p1-3 hide"></div>
+           <div class="p1-2 hide"></div>
+
+           <div class="end-bg hide">
+               <div class="text-T hide"><img src="" alt=""></div>
+               <div class="attention"></div>
+               <div class="call"></div>
+           </div>
+           <div class="video-box hide">
+               <video id="video" preload="true" width="1039" height="640" 
+                      webkit-playsinline="true"
+                      playsinline="true"
+                      x-webkit-airplay="true"
+                      x5-video-player-type="h5"
+                      x5-video-player-fullscreen="true"
+                      x5-video-orientation="portraint">
+                   <source src="http://p0j4io1ny.bkt.clouddn.com/lake.mp4"  type='video/mp4'>
+                   <!-- <source src="http://p0j4io1ny.bkt.clouddn.com/jmf02.mp4"  type='video/mp4'> -->
+               </video>
+           </div>
+           <div class="cover hide">
+           		<div class="qrcode"><img src="images/qrcode.jpg"></div>	
+           </div>
+       </div>
+
+    </div>
+     <!--<div class="musicicon musicrotate"></div>-->
+    <audio id="bg" preload="auto" src="http://test.trando.com.cn/xiaojiu/20170327wlg/images/music2.mp3" ></audio>
+</div>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/PreloadJS/0.4.1/preloadjs.min.js"></script>
+    <script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>   
+    <script src="js/TweenMax.min.js" ></script>
+    <script src="js/main.js"></script>
+    <script>
+        var Td = new TranDocode();
+        Td.init();
+    </script>
+</body>
+</html>

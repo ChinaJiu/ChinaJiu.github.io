@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <title>追溯与你一起的时光</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript">
+        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                var phoneScale = parseInt(window.screen.width)/640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+</head>
+<body>
+
+<div class="loading">
+    <div class="load"></div>
+    <div class="loadingtxt">0%</div>
+</div>
+
+<div class="main hide">
+    <div class="page" id="page">
+        <div class="page1">
+            <div class="m1">
+                <div class="p1-1"></div>
+                <div class="p1-1-1"></div>
+                <div class="p1-box1">
+                    <div class="p1-3"></div>
+                    <div class="p1-4"></div>
+                    <div class="p1-2"></div>
+                </div>
+                <div class="p1-5"></div>
+                <div class="p1-6"></div>
+                <div class="p1-7"></div>
+                <div class="p1-bottom"></div>
+            </div>
+            <div class="m2 hide">
+                <div class="p1-8"></div>
+                <div class="p1-9"></div>
+                <div class="p1-10"></div>
+                <div class="p1-11"></div>
+                <div class="p1-m-1"></div>
+                <div class="p1-bottom-2"></div>
+            </div>
+        </div>
+        <div class="page2">
+            <div class="p2-1"></div>
+            <div class="p2-2"></div>
+            <div class="p2-3"></div>
+            <div class="p2-m-1"></div>
+            <div class="p2-bottom"></div>
+        </div>
+        <div class="page3">
+            <div class="p3-1"></div>
+            <div class="p3-2"></div>
+            <div class="p3-3"></div>
+            <div class="p3-m-1"></div>
+            <div class="p3-bottom"></div>
+        </div>
+        <div class="page4">
+            <div class="p4-1"></div>
+            <div class="p4-2"></div>
+            <div class="p4-3"></div>
+            <div class="p4-m-1"></div>
+            <div class="p4-bottom"></div>
+        </div>
+        <div class="page5">
+            <div class="p5-1"></div>
+            <div class="p5-2"></div>
+            <div class="p5-3"></div>
+            <div class="p5-4"></div>
+            <div class="p5-5"></div>
+            <div class="p5-6"></div>
+            <div class="p5-bottom"></div>
+            <div class="p5-m-1"></div>
+            <div class="p5-m-2"></div>
+        </div>
+
+
+    </div>
+    <div class="logo"></div>
+    <div class="musicicon musicrotate"></div>
+    <div class="up hide"></div>
+    <audio id="bg" preload="auto"  autoplay="autoplay" loop="loop" src="images/music.mp3" ></audio>
+</div>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/PreloadJS/0.4.1/preloadjs.min.js"></script>
+    <script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>   
+    <script src="js/TweenMax.min.js" ></script>
+    <script src="js/touchDir.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var Td = new TranDocode();
+        Td.init();
+    </script>
+</body>
+</html>
