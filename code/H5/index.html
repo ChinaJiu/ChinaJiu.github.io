@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <title>TranDo</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript">
+        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                var phoneScale = parseInt(window.screen.width)/640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+</head>
+<body>
+
+<div class="loading">
+    <div class="l-1">2017</div>
+    <div class="l-2">我们走过了很多路</div>
+    <div class="l-img"></div>
+    <div class="loadingtxt">0%</div>
+    <div class="l-3">一起回顾亦庄金茂府的传奇之路</div>
+</div>
+
+<div class="main hide">
+    <div class="page" id="page">
+
+       <div class="page1">
+           <div id="magazine">
+               <div class="page1-bg">
+                   <div class="numBox1"></div>
+                   <div class="p1-1"></div>
+                   <div class="v1">
+                       <video class="v-v-1" controls="controls" poster="images/poster1.jpg" webkit-playsinline playsinline>
+                           <source src="http://p0j4io1ny.bkt.clouddn.com/yzjmf01.mp4" type="video/mp4">
+                           Your browser does not support the video tag.
+                       </video>
+                   </div>
+                   <div class="p1-2"></div>
+               </div>
+               <div class="page2-bg">
+                   <div class="numBox2"></div>
+                   <div class="p2-1"></div>
+                   <div class="v2">
+                       <video class="v-v-2" controls="controls" poster="images/poster2.jpg" webkit-playsinline playsinline>
+                           <source src="http://p0j4io1ny.bkt.clouddn.com/yzjmf02.mp4" type="video/mp4">
+                           Your browser does not support the video tag.
+                       </video>
+                   </div>
+               </div>
+               <div class="page3-bg">
+                   <div class="numBox3"></div>
+                   <div class="p3-1"></div>
+                   <div class="v3">
+                       <video class="v-v-3" controls="controls" poster="images/poster3.jpg" webkit-playsinline playsinline>
+                           <source src="http://p0j4io1ny.bkt.clouddn.com/yzjmf03.mp4" type="video/mp4">
+                           Your browser does not support the video tag.
+                       </video>
+                   </div>
+               </div>
+               <div class="page4-bg">
+                   <div class="numBox4"></div>
+                   <div class="p4-1"></div>
+                   <div class="v4">
+                       <video class="v-v-4" controls="controls" poster="images/poster4.jpg" webkit-playsinline playsinline>
+                           <source src="http://p0j4io1ny.bkt.clouddn.com/yzjmf05.mp4" type="video/mp4">
+                           Your browser does not support the video tag.
+                       </video>
+                   </div>
+               </div>
+               <div class="page5-bg">
+                   <div class="numBox5"></div>
+                   <div class="p5-1"></div>
+                   <div class="v5">
+                       <video class="v-v-5" controls="controls" poster="images/poster5.jpg" webkit-playsinline playsinline>
+                           <source src="http://p0j4io1ny.bkt.clouddn.com/yzjmf04.mp4" type="video/mp4">
+                           Your browser does not support the video tag.
+                       </video>
+                   </div>
+                   <div class="p5-2"></div>
+               </div>
+               <div class="page6-bg">
+                   <div class="numBox6"></div>
+                   <div class="p6-1"></div>
+                   <div class="p6-2"></div>
+                   <img class="footer" src="images/footer.png" alt="">
+
+                   <div class="warning">前方高能，一大波弹幕正在袭来！</div>
+                   <div class="barrage">
+                       <div class="aisle1"></div>
+                       <div class="aisle2"></div>
+                       <div class="aisle3"></div>
+                       <div class="aisle4"></div>
+                       <div class="aisle5"></div>
+                   </div>
+
+               </div>
+           </div>
+           <div class="footer-call hide"></div>
+           <svg class="turn-left hide" width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+               <g fill="none" fill-rule="evenodd" stroke-width="1.5">
+                   <circle cx="44" cy="44" r="40">
+                       <animate attributeName="r"
+                                begin="0s" dur="1.8s"
+                                values="1; 15"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.165, 0.84, 0.44, 1"
+                                repeatCount="indefinite" />
+                       <animate attributeName="stroke-opacity"
+                                begin="0s" dur="1.8s"
+                                values="1; 0"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.3, 0.61, 0.355, 1"
+                                repeatCount="indefinite" />
+                   </circle>
+                   <circle cx="44" cy="44" r="40">
+                       <animate attributeName="r"
+                                begin="-0.9s" dur="1.8s"
+                                values="1; 10"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.165, 0.84, 0.44, 1"
+                                repeatCount="indefinite" />
+                       <animate attributeName="stroke-opacity"
+                                begin="-0.9s" dur="1.8s"
+                                values="1; 0"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.3, 0.61, 0.355, 1"
+                                repeatCount="indefinite" />
+                   </circle>
+               </g>
+           </svg>
+
+           <svg class="turn-right" width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+               <g fill="none" fill-rule="evenodd" stroke-width="1.5">
+                   <circle cx="44" cy="44" r="40">
+                       <animate attributeName="r"
+                                begin="0s" dur="1.8s"
+                                values="1; 15"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.165, 0.84, 0.44, 1"
+                                repeatCount="indefinite" />
+                       <animate attributeName="stroke-opacity"
+                                begin="0s" dur="1.8s"
+                                values="1; 0"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.3, 0.61, 0.355, 1"
+                                repeatCount="indefinite" />
+                   </circle>
+                   <circle cx="44" cy="44" r="40">
+                       <animate attributeName="r"
+                                begin="-0.9s" dur="1.8s"
+                                values="1; 10"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.165, 0.84, 0.44, 1"
+                                repeatCount="indefinite" />
+                       <animate attributeName="stroke-opacity"
+                                begin="-0.9s" dur="1.8s"
+                                values="1; 0"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.3, 0.61, 0.355, 1"
+                                repeatCount="indefinite" />
+                   </circle>
+               </g>
+           </svg>
+       </div>
+
+    </div>
+     <div class="musicicon musicrotate"></div>
+    <audio id="bg" preload="auto"  autoplay src="images/music.mp3" loop="loop"></audio>
+</div>
+    <!--<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/PreloadJS/0.4.1/preloadjs.min.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>-->
+
+
+    <script src="js/jquery-2.1.1.min.js" ></script>
+    <script src="js/hammer.min.js" ></script>
+    <script src="js/preloadjs-0.6.0.min.js" ></script>
+
+    <script src="js/TweenMax.min.js" ></script>
+    <script src="js/turn.min.js" ></script>
+    <script src="js/timeIscoll.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var Td = new TranDocode();
+        Td.init();
+    </script>
+</body>
+</html>
