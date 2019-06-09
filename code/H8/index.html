@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <title>TranDo</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript">
+        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                var phoneScale = parseInt(window.screen.width)/640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+</head>
+<body>
+
+<div class="loading">
+    <div class="loadingtxt">0%</div>
+</div>
+
+<div class="main hide">
+    <div class="page" id="page">
+
+       <div class="page1">
+           <div id="magazine">
+               <div class="m1"></div>
+               <div class="m2"></div>
+               <div class="m3">
+                   <div class="fram">
+
+                   </div>
+               </div>
+               <div class="m4">
+
+               </div>
+               <div class="m5">
+                   <div class="m5-title"></div>
+                   <div class="m5-1"></div>
+                   <div class="m5-2">
+                       <div class="m5-text"></div>
+                       <!--<div class="float5-fff"></div>-->
+                   </div>
+                   <div class="fram-box">
+                        <div></div>
+                   </div>
+
+                   <div class="svg hide">
+                       <p>点击聆听</p>
+                       <svg class="" width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke="#000">
+                           <g fill="none" fill-rule="evenodd" stroke-width="1.5">
+                               <circle cx="44" cy="44" r="40">
+                                   <animate attributeName="r"
+                                            begin="0s" dur="1.8s"
+                                            values="1; 15"
+                                            calcMode="spline"
+                                            keyTimes="0; 1"
+                                            keySplines="0.165, 0.84, 0.44, 1"
+                                            repeatCount="indefinite" />
+                                   <animate attributeName="stroke-opacity"
+                                            begin="0s" dur="1.8s"
+                                            values="1; 0"
+                                            calcMode="spline"
+                                            keyTimes="0; 1"
+                                            keySplines="0.3, 0.61, 0.355, 1"
+                                            repeatCount="indefinite" />
+                               </circle>
+                               <circle cx="44" cy="44" r="40">
+                                   <animate attributeName="r"
+                                            begin="-0.9s" dur="1.8s"
+                                            values="1; 10"
+                                            calcMode="spline"
+                                            keyTimes="0; 1"
+                                            keySplines="0.165, 0.84, 0.44, 1"
+                                            repeatCount="indefinite" />
+                                   <animate attributeName="stroke-opacity"
+                                            begin="-0.9s" dur="1.8s"
+                                            values="1; 0"
+                                            calcMode="spline"
+                                            keyTimes="0; 1"
+                                            keySplines="0.3, 0.61, 0.355, 1"
+                                            repeatCount="indefinite" />
+                               </circle>
+                           </g>
+                       </svg>
+
+                   </div>
+
+
+               </div>
+               <div class="m6"></div>
+               <div class="m7">
+                   <div class="m7-title"></div>
+                   <div class="m7-1"></div>
+                   <div class="m7-2">
+                       <div class="m7-text"></div>
+                       <!--<div class="float7-fff"></div>-->
+                   </div>
+                   <div class="fram-box">
+                       <div></div>
+                   </div>
+               </div>
+               <div class="m8"></div>
+               <div class="m9">
+                   <div class="m9-title"></div>
+                   <div class="m9-1"></div>
+                   <div class="m9-2">
+                       <div class="m9-text"></div>
+                       <!--<div class="float9-fff"></div>-->
+                   </div>
+                   <div class="fram-box">
+                       <div></div>
+                   </div>
+               </div>
+               <div class="m10"></div>
+               <div class="m11">
+                   <div class="m11-title"></div>
+                   <div class="m11-1"></div>
+                   <div class="m11-2">
+                       <div class="m11-text"></div>
+                       <!--<div class="float11-fff"></div>-->
+                   </div>
+                   <div class="fram-box">
+                       <div></div>
+                   </div>
+               </div>
+               <div class="m12"></div>
+               <div class="m13">
+                   <div class="m13-title"></div>
+                   <div class="m13-1"></div>
+                   <div class="m13-2">
+                       <div class="m13-text"></div>
+                       <!--<div class="float13-fff"></div>-->
+                   </div>
+                   <div class="fram-box">
+                       <div></div>
+                   </div>
+               </div>
+               <div class="m14"></div>
+               <div class="m15">
+                   <div class="m15-title"></div>
+                   <div class="m15-1"></div>
+                   <div class="m15-2">
+                       <div class="m15-text"></div>
+                       <!--<div class="float15-fff"></div>-->
+                   </div>
+                   <div class="fram-box">
+                       <div></div>
+                   </div>
+               </div>
+               <div class="m16"></div>
+               <div class="m17">
+                   <div class="m17-title"></div>
+                   <div class="m17-1"></div>
+                   <div class="m17-2">
+                       <div class="m17-text"></div>
+                       <!--<div class="float17-fff"></div>-->
+                   </div>
+                   <div class="fram-box">
+                       <div></div>
+                   </div>
+               </div>
+               <div class="m18"></div>
+               <div class="m19">
+                   <div class="page-end"></div>
+               </div>
+           </div>
+           <div class="movelr"></div>
+           <div class="point-event"></div>
+
+
+
+       </div>
+
+    </div>
+     <div class="musicicon musicrotate"></div>
+    <audio id="bg-music" preload="auto" loop="loop" autoplay="autoplay"  src="images/music/music-bg.mp3" ></audio>
+    <audio id="bg" preload="auto"  autoplay="autoplay"  src="" ></audio>
+</div>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/PreloadJS/0.4.1/preloadjs.min.js"></script>
+    <script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>   
+    <script src="js/TweenMax.min.js" ></script>
+    <script src="js/turn.js" ></script>
+    <script src="js/touchDir.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var Td = new TranDocode();
+        Td.init();
+    </script>
+</body>
+</html>
