@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <title>TranDo</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript">
+        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                var phoneScale = parseInt(window.screen.width)/640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+</head>
+<body>
+
+<div class="loading">
+    <div class="loadingtxt">0%</div>
+</div>
+
+<div class="main hide">
+    <div class="page" id="page">
+
+       <div class="page1">
+           <div class="menu">
+               <div class="star">
+                   <div class="star-1"></div>
+                   <div class="star-2"></div>
+                   <div class="star-3"></div>
+               </div>
+               <div class="p1-1"></div>
+               <div class="p1-2"></div>
+               <div class="p1-3"></div>
+               <div class="p1-4"></div>
+               <div class="menu-box">
+                   <div class="menu-btn1">
+                       <div class="menu-1"></div>
+                   </div>
+                   <div class="menu-btn2"></div>
+                   <div class="menu-btn3"></div>
+               </div>
+
+               <div class="rule hide">
+                    <div class="ruleClose-btn"></div>
+               </div>
+
+               <div class="snow-box">
+
+               </div>
+           </div>
+           <div class="game hide">
+               <div class="game-score"><span>0</span>分</div>
+               <div class="game-time"><span>30</span>s</div>
+
+               <div class="game-screen">
+                   <ul >
+                       <li class="li1"></li>
+                       <li class="li2"></li>
+                       <li class="li3"></li>
+                       <li class="li4"></li>
+                       <li class="li5"></li>
+                       <li class="li6"></li>
+                       <li class="li7"></li>
+                       <li class="li8"></li>
+                       <li class="li9"></li>
+                   </ul>
+               </div>
+
+               <div class="game-countdown">
+                   <div class="g-1"></div>
+                   <div class="g-2"></div>
+                   <div class="g-3"></div>
+               </div>
+
+               <div class="game-over hide">
+                   <div class="game-over-bg"></div>
+                   <div class="game-over-1"></div>
+                   <div class="game-over-2"><span>88</span>分</div>
+
+                   <div class="game-btn-1"></div>
+                   <div class="game-btn-2"></div>
+                   <div class="game-btn-3"></div>
+               </div>
+
+
+               <div class="float hide">
+                   <div class="float-div"></div>
+               </div>
+           </div>
+
+           <div class="rankList hide">
+               <div class="rankClose-btn"></div>
+               <p class="rankList-score" >我的分数<span>100</span>分</p>
+               <p class="rankList-num" >我的当前排名为 <span>1100</span> 名</p>
+               <div class="box-scroller">
+                   <div id="wrapper">
+                       <div id="scroller">
+                           <ul id="thelist">
+                               <li><span class="a">1</span><span class="b">sadasdasadasdasdas</span><span class="c">score</span></li>
+                               <li><span class="a">2</span><span class="b">撒大声地撒大声地撒大声地</span><span class="c">score</span></li>
+                               <li><span class="a">3</span><span class="b">撒大声地撒大声地撒大声地</span><span class="c">score</span></li>
+                               <li><span class="a">4</span><span class="b">撒大声地撒大声地撒大声地撒大声地</span><span class="c">score</span></li>
+                               <li><span class="a">5</span><span class="b">name</span><span class="c">score</span></li>
+                               <li><span class="a">6</span><span class="b">name</span><span class="c">score</span></li>
+                               <li><span class="a">7</span><span class="b">撒大声地撒大声地撒大声地撒大声地</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">name</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">撒大声地撒大声地撒大声地撒大声地</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">name</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">name</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">撒大声地撒大声地撒大声地撒大声地</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">name</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">撒大声地撒大声地撒大声地撒大声地</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">name</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">撒大声地撒大声地撒大声地撒大声地</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">撒大声地撒大声地撒大声地撒大声地</span><span class="c">score</span></li>
+                               <li><span class="a">8</span><span class="b">撒大声地撒大声地撒大声地撒大声地</span><span class="c">score</span></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="rank-title"><span class="a">名次</span><span class="b">玩家昵称</span><span class="c">成绩</span></div>
+               <div class="rank-btn-1 hide"></div>
+           </div>
+
+           <div class="game-submit hide">
+               <div class="game-submit-1"></div>
+               <div class="game-submit-form">
+                   <input class="form-name" type="text" placeholder="请输入真实姓名">
+                   <input class="form-iphone" type="text" placeholder="请输入正确手机号">
+               </div>
+               <div class="game-submit-btn"></div>
+               <div class="game-submit-close-btn"></div>
+           </div>
+
+       </div>
+
+    </div>
+     <div class="musicicon musicrotate"></div>
+    <audio id="bg" preload="auto" loop="loop"  autoplay src="images/music-hk.mp3" ></audio>
+</div>
+    <!--<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/PreloadJS/0.4.1/preloadjs.min.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>-->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="js/preloadjs-0.6.0.min.js"></script>
+    <script src="js/TweenMax.min.js" ></script>
+    <script src="js/iscroll.js" ></script>
+    <script src="js/main.js"></script>
+    <script>
+        var Td = new TranDocode();
+        Td.init();
+    </script>
+</body>
+</html>
