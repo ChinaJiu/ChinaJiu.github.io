@@ -1,0 +1,143 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td,section,canvas {
+    padding: 0;
+    margin: 0;
+}
+li{ list-style: none;}
+
+html,body {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Microsoft YaHei', Arial;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    -webkit-touch-callout:none; /* 禁用长触弹出的下载图片菜单 */
+    -webkit-user-select:none; /* 禁用长触选择文字等功能 */
+}
+
+.hide{ display: none;}
+
+.loading{ position: absolute; top: 0; left: 0; width: 100%; height:100%;background: url("") no-repeat center center;}
+.loading>div{position: relative; top: 50%; left: 50%;}
+.loadingtxt{margin: 10px 0 0 -55px;font-size:24px;width:100px;height:30px;line-height: 30px; color: white;text-align: center; }
+
+.main{ width: 100%; height: 100%;position: relative; overflow: hidden;}
+.page{ width: 100%; height: 100%;  position: relative;}
+.page>div{ position: absolute; overflow: hidden; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center center;}
+.page .page1{background-color: white;}
+.page1>div{ position: absolute; top: 50%; left: 50%;margin: -520px 0 0 -320px; width: 640px; height: 1039px;}
+.container1{background: url("../images/c1-bg.jpg") no-repeat center center; }
+.container1>div{position: absolute; left:50%; top:50%;}
+.l-1{margin: -127px 0 0 -73px;}
+.l-2{margin: -127px 0 0 -73px;}
+.l-3{margin: -127px 0 0 -73px;}
+.l-4{margin: -520px 0 0 -320px;}
+.l-5{margin: 230px 0 0 -128px;}
+.l-6{margin: 230px 0 0 -128px; width: 0px; height: 62px;overflow: hidden;}
+
+.p1-1{margin: 404px 0 0 -210px;}
+.p1-2{margin: -520px 0 0 -320px;}
+.p1-3{margin: -520px 0 0 -320px;}
+.p1-4{margin: 389px 0 0 -93px;}
+
+.container2{background: url("../images/p2-bg.jpg") no-repeat center center;}
+.container2>div{position: absolute; left:50%; top:50%;}
+.p2-1{margin: -199px 0 0 -229px;}
+.p2-2{margin: 151px 0 0 -199px;}
+.p2-3{margin: 151px 0 0 -199px;}
+.p2-4{margin: -7px 0 0 -240px;}
+.p2-5{margin: -369px 0 0 -212px;}
+.p2-6{margin: -19px 0 0 -169px;}
+.p2-7{margin: -59px 0 0 -249px;}
+.p2-8{margin: -520px 0 0 -320px;}
+
+.N-Box{margin:-182px 0 0 -320px;}
+.N-Box>img{position: absolute;left: 0;bottom: 0;}
+
+.V-Box{margin:0 0 0 -14px;}
+.V-Box>img{position: absolute;left: 0;top: 0;}
+
+.M-Box{margin:12px 0 0 -243px;}
+.M-Box>img{position: absolute;left: 0;top: 0;}
+
+.C-Box{width:640px; height: 1039px; margin:-520px 0 0 -320px;}
+.C-Box>div{position: absolute;left: 50%;top: 50%;}
+
+.c-1{margin: 290px 0 0 -150px;transform: scale(1);}
+.c-2{margin: 289px 0 0 -227px;transform: scale(.8);}
+.c-3{margin: 165px 0 0 -180px;transform: scale(.6);}
+.c-4{margin: 300px 0 0 170px;transform: scale(1);}
+.c-5{margin: 133px 0 0 183px;transform: scale(.7);}
+.c-6{margin: 176px 0 0 242px;transform: scale(.8);}
+
+.container3{background: url("../images/gameBegin-bg.jpg") no-repeat center center; z-index: 10;}
+.container3>div{position: absolute; left:50%; top:50%;margin: -520px 0 0 -320px; width: 640px; height: 1039px;}
+.gameBegin>div{position: absolute;left:50%;top:50%;}
+.gameWord{margin: -520px 0 0 -320px; width: 640px; height: 1039px;}
+.gameWord>div{position: absolute;left:50%;top:50%;}
+
+.gameWord-1{margin: -309px 0 0 -229px;}
+.gameWord-2{margin: 282px 0 0 -264px;}
+.gameWord-3{margin: 282px 0 0 -94px;}
+.gameWord-4{margin: 282px 0 0 108px;}
+
+.g-1{background: url("../images/g-1.png") no-repeat center center;margin: 22px 0 0 -160px;width: 320px;height: 154px;}
+.g-2{background: url("../images/g-2.png") no-repeat center center;margin: 22px 0 0 -160px;width: 320px;height: 154px;}
+.g-3{background: url("../images/g-3.png") no-repeat center center;margin: 22px 0 0 -160px;width: 320px;height: 154px;}
+.g-go{background: url("../images/g-go.png") no-repeat center center;margin: 22px 0 0 -160px;width: 320px;height: 154px;}
+
+.cloud-left-1{margin: -1600px 0 0 -1860px;}
+.cloud-left-2{margin: -1600px 0 0 410px;}
+.cloud-right-1{margin: 687px 0 0 -1870px;}
+.cloud-right-2{margin: 627px 0 0 640px;}
+
+.gameBegin-1{margin: -396px 0 0 -438px;}
+.gameBegin-2{margin: -396px 0 0 -438px;}
+.gameBegin-3{margin: -398.5px 0 0 -488px;}
+.gameBegin-4{margin: -446px 0 0 -298px;background: url("../images/gameBegin-4.png") no-repeat center center;width: 143px;height: 55px;}
+.gameBegin-5{margin: -446px 0 0 155px;background: url("../images/gameBegin-5.png") no-repeat center center;width: 143px;height: 55px;}
+.gameBegin-4>span{line-height: 27px;font-size: 25px;margin-left: 70px;margin-top: 16px;display: block;width: 45px; height: 27px;text-align: center;}
+.gameBegin-5>span{line-height: 27px;font-size: 25px;margin-left: 30px;margin-top: 16px;display: block;width: 45px; height: 27px;text-align: center;}
+
+.presents{ width: 100%; height: 100%;margin: -520px 0 0 -320px;}
+.presents div{ display: block; position: absolute; left: 0;top:0;}
+.present-1{ background: url("../images/present-1.png") no-repeat center center; width: 123px;height: 76px;}
+.present-2{ background: url("../images/present-2.png") no-repeat center center; width: 99px;height: 61px;}
+.present-3{ background: url("../images/present-3.png") no-repeat center center; width: 84px;height: 53px;}
+.present-4{ background: url("../images/bomb.png") no-repeat center center; width: 76px; height: 80px;}
+
+.gameRule>div{position: absolute;}
+.gameRule-1{margin: 186px 0 0 106px;}
+.gameRule-2{margin: 789px 0 0 287px;}
+
+.gameChart>div{position: absolute;}
+.gameChart-1{margin: 186px 0 0 106px;}
+.gameChart-2{margin: 789px 0 0 287px;}
+#wrapper{width: 350px; height: 300px; overflow: hidden;margin: 442px 0 0 146px;}
+#wrapper>ul{width: 100%;}
+.Chart-ul>li{width: 345px; height: 60px;font-size: 25px;color: #4172b9;background: url("../images/chart-upBg.png") no-repeat center 0;}
+.Chart-ul>li .Chart-1{position: absolute;margin-top: 12px;margin-left: 4px; width: 36px;height: 36px;text-align: center;line-height: 20px;}
+.Chart-ul>li .Chart-2{position: absolute;margin-top: 22px;margin-left: 50px; width: 100px;height: 20px;line-height: 20px;}
+.Chart-ul>li .Chart-3{position: absolute;margin-top: 19px;margin-left: 156px; width: 100px;height: 20px;text-align: center;line-height: 20px;}
+.Chart-ul>li .Chart-4{position: absolute;margin-top: 19px;margin-left: 258px; width: 100px;height: 20px;text-align: center;line-height: 20px;}
+
+/*音乐按钮*/
+.musicicon{ background: url("../images/musicicon.png") no-repeat; width: 42px; height: 43px; position: absolute; top: 20px; right: 20px;}
+
+/*音乐按钮旋转*/
+.musicrotate{-webkit-animation: xuanzhuan 5s infinite linear; animation: xuanzhuan 5s infinite linear;}
+@keyframes xuanzhuan {
+    0% { transform: rotate(0deg)}
+    100% { transform: rotate(360deg)}
+}
+@-webkit-keyframes xuanzhuan {
+    0% { -webkit-transform: rotate(0deg)}
+    100% { -webkit-transform: rotate(360deg)}
+}
+/*音乐按钮旋转*/
+
+
+

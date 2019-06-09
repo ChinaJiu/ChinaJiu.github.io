@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <script type="text/javascript" src="js/setviewport.js"></script>
+    <script type="text/javascript" src="js/soundjs-0.6.0.min.js"></script>
+    <script type="text/javascript" src="js/preloadjs-0.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/weixin.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!--<script type="text/javascript" src="js/easeljs-0.8.2.min.js"></script>-->
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<div class="loading">
+    <div class="loadingtxt">0%</div>
+</div>
+
+<div class="main hide">
+    <div class="page" id="page">
+
+       <div class="page1">
+            <div class="container1">
+                <div class="l-2"><img src="images/loading-3.png" alt=""/></div>
+                <div class="l-1"><img src="images/loading-2.png" alt=""/></div>
+                <div class="l-3 hide"><img src="images/loading-4.png" alt=""/></div>
+                <div class="l-4"><img src="images/loading-1.png" alt=""/></div>
+                <div class="l-5"><img src="images/loading1-2.png" alt=""/></div>
+                <div class="l-6"><img src="images/loading1-1.png" alt=""/></div>
+                <div class="p1-1 hide"><img src="images/p1-1.png" alt=""/></div>
+                <div class="p1-3 hide"><img src="images/p1-3.png" alt=""/></div>
+                <div class="p1-2 hide"><img src="images/p1-2.png" alt=""/></div>
+                <div class="p1-4 hide"><img src="images/p1-4.png" alt=""/></div>
+            </div>
+           <div class="container2 hide">
+               <div class="p2-1"><img src="images/p2-1.png" alt=""/></div>
+               <div class="p2-2"><img src="images/p2-2.png" alt=""/></div>
+
+               <div class="N-Box">
+                   <img class="n-1 hide" src="images/n-1.png" alt=""/>
+                   <img class="n-2 hide" src="images/n-2.png" alt=""/>
+                   <img class="n-3 hide" src="images/n-3.png" alt=""/>
+                   <img class="n-4 hide" src="images/n-4.png" alt=""/>
+                   <img class="n-5 hide" src="images/n-5.png" alt=""/>
+                   <img class="n-6 hide" src="images/n-6.png" alt=""/>
+               </div>
+               <div class="V-Box">
+                   <img class="v-1 hide" src="images/v-1.png" alt=""/>
+                   <img class="v-2 hide" src="images/v-2.png" alt=""/>
+                   <img class="v-3 hide" src="images/v-3.png" alt=""/>
+                   <img class="v-4 hide" src="images/v-4.png" alt=""/>
+                   <img class="v-5 hide" src="images/v-5.png" alt=""/>
+                   <img class="v-6 hide" src="images/v-6.png" alt=""/>
+               </div>
+               <div class="M-Box">
+                   <img class="m-1 hide" src="images/m-1.png" alt=""/>
+                   <img class="m-2 hide" src="images/m-2.png" alt=""/>
+                   <img class="m-3 hide" src="images/m-3.png" alt=""/>
+                   <img class="m-4 hide" src="images/m-4.png" alt=""/>
+                   <img class="m-5 hide" src="images/m-5.png" alt=""/>
+                   <img class="m-6 hide" src="images/m-6.png" alt=""/>
+               </div>
+
+               <div class="C-Box">
+                   <div class="c-1 Tm"><img src="images/c-1.png" alt=""/></div>
+                   <div class="c-2 Tm"><img src="images/c-2.png" alt=""/></div>
+                   <div class="c-3 Tm"><img src="images/c-3.png" alt=""/></div>
+                   <div class="c-4 Tm"><img src="images/c-4.png" alt=""/></div>
+                   <div class="c-5 Tm"><img src="images/c-5.png" alt=""/></div>
+                   <div class="c-6 Tm"><img src="images/c-6.png" alt=""/></div>
+               </div>
+
+               <div class="p2-6 hide"><img src="images/p2-6.png" alt=""/></div>
+               <div class="p2-7 hide"><img src="images/p2-7.png" alt=""/></div>
+
+               <div class="p2-8"><img src="images/p2-8.png" alt=""/></div>
+               <div class="p2-5 hide"><img src="images/p2-5.png" alt=""/></div>
+               <div class="p2-3 hide"><img src="images/p2-3.png" alt=""/></div>
+               <div class="p2-4"><img src="images/p2-4.png" alt=""/></div>
+
+           </div>
+
+           <div class="container3 hide">
+               <div class="gameBegin">
+
+                   <div class="g-1"></div>
+                   <div class="g-2"></div>
+                   <div class="g-3"></div>
+                   <div class="g-go"></div>
+                   <div class="presents">
+
+                   </div>
+                   <div class="gameBegin-1"><img src="images/gameBegin-1.png" alt=""/></div>
+                   <div class="gameBegin-2"><img src="images/gameBegin-2.png" alt=""/></div>
+                   <div class="gameBegin-3"><img src="images/gameBegin-3.png" alt=""/></div>
+
+                   <div class="gameBegin-4"><span>0</span></div>
+                   <div class="gameBegin-5"><span>30</span></div>
+                   <div class="gameWord ">
+                        <div class="gameWord-1"><img src="images/gameWord-1.png" alt=""/></div>
+                        <div class="gameWord-2"><img src="images/gameWord-2.png" alt=""/></div>
+                        <div class="gameWord-3"><img src="images/gameWord-3.png" alt=""/></div>
+                        <div class="gameWord-4"><img src="images/gameWord-4.png" alt=""/></div>
+                   </div>
+                   <div class="cloud-left-1"><img src="images/game-1.png" alt=""/></div>
+                   <div class="cloud-left-2"><img src="images/game-1.png" alt=""/></div>
+                   <div class="cloud-right-1"><img src="images/game-1.png" alt=""/></div>
+                   <div class="cloud-right-2"><img src="images/game-1.png" alt=""/></div>
+               </div>
+
+               <div class="gameRule hide">
+                    <div class="gameRule-1"><img src="images/gameRule-1.png" alt=""/></div>
+                    <div class="gameRule-2"><img src="images/gameRule-2.png" alt=""/></div>
+               </div>
+               <div class="gameChart hide">
+                   <div class="gameChart-1"><img src="images/gameChart-1.png" alt=""/></div>
+
+                   <div id="wrapper">
+                           <ul class="Chart-ul">
+                               <li><img class="Chart-1" src="images/chart-img.png" alt=""/> <sapn class="Chart-2">小</sapn> <sapn class="Chart-3">1</sapn> <sapn class="Chart-4">1</sapn> </li>
+                               <li><img class="Chart-1" src="images/chart-img.png" alt=""/> <sapn class="Chart-2">小酒</sapn> <sapn class="Chart-3">10</sapn> <sapn class="Chart-4">11</sapn> </li>
+                               <li><img class="Chart-1" src="images/chart-img.png" alt=""/> <sapn class="Chart-2">小酒酒</sapn> <sapn class="Chart-3">100</sapn> <sapn class="Chart-4">111</sapn> </li>
+                               <li><img class="Chart-1" src="images/chart-img.png" alt=""/> <sapn class="Chart-2">小酒酒</sapn> <sapn class="Chart-3">1000</sapn> <sapn class="Chart-4">1111</sapn> </li>
+                               <li><img class="Chart-1" src="images/chart-img.png" alt=""/> <sapn class="Chart-2">小酒酒</sapn> <sapn class="Chart-3">1000</sapn> <sapn class="Chart-4">1111</sapn> </li>
+                               <li><img class="Chart-1" src="images/chart-img.png" alt=""/> <sapn class="Chart-2">小酒酒</sapn> <sapn class="Chart-3">1000</sapn> <sapn class="Chart-4">1111</sapn> </li>
+                               <li><img class="Chart-1" src="images/chart-img.png" alt=""/> <sapn class="Chart-2">小酒酒</sapn> <sapn class="Chart-3">1000</sapn> <sapn class="Chart-4">1111</sapn> </li>
+                               <li><img class="Chart-1" src="images/chart-img.png" alt=""/> <sapn class="Chart-2">小酒酒</sapn> <sapn class="Chart-3">1000</sapn> <sapn class="Chart-4">1111</sapn> </li>
+                           </ul>
+                   </div>
+                   <div class="gameChart-2"><img src="images/gameRule-2.png" alt=""/></div>
+               </div>
+               <!--<div class="gameOver">-->
+
+               <!--</div>-->
+               <!--<div class="gamePass">-->
+
+               <!--</div>-->
+           </div>
+       </div>
+    </div>
+    <div class="musicicon musicrotate"></div>
+    <audio id="bg" src="images/bg.mp3" ></audio>
+</div>
+
+<!--<div style="display:none;">-->
+    <!--<script src="https://s4.cnzz.com/z_stat.php?id=1259868791&web_id=1259868791" language="JavaScript"></script>-->
+<!--</div>-->
+
+</body>
+</html>
