@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script type="text/javascript">
+        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                var phoneScale = parseInt(window.screen.width)/640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+</head>
+<body>
+
+<div class="loading">
+    <div class="loadingImg"><img src="images/loading.png" alt=""></div>
+    <div class="loadingtxt">0%</div>
+</div>
+
+<div class="main hide">
+    <div class="page" id="page">
+
+        <div class="page1">
+            <div class="game-rule">
+                <div class="p1-0"><img src="images/p1-0.png" alt=""></div>
+                <div class="p1-1 shake"><img src="images/p1-1.png" alt=""></div>
+                <div class="p1-5 hide">
+                    <img class="p1-5-1" src="images/p1-5.png" alt="">
+                    <img class="p1-5-2" src="images/p1-4.png" alt="">
+                    <img class="p1-5-3" src="images/p1-2.png" alt="">
+                    <img class="p1-5-4" src="images/p1-3.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-screen hide">
+                <div class="game-box">
+                    <ul class="game-ul">
+
+                    </ul>
+                    <div class="game-hero hide"><img src="images/game-hero.png" alt=""></div>
+                </div>
+                <div class="d-score"><p class="g-score">得分 <span>0</span> 分</p></div>
+
+                <div class="g-s-b" ><img src="images/p1-8.png" alt=""></div>
+                <div class="g-l"></div>
+                <div class="g-r"></div>
+                <div class="g-count f hide">
+                    <p class="g-c-1"><img src="" alt=""></p>
+                    <p class="g-c-2"><img src="images/p1-7.png" alt=""></p>
+                </div>
+            </div>
+
+            <div class="game-over f hide">
+                <div class="p2-1"><img src="images/p2-1.png" alt=""></div>
+                <div class="p2-2">
+                    <p class="g-o-score">你获得了<span></span>分</p>
+                    <p class="g-o-text">手速太慢了！</p>
+                </div>
+                <div class="p2-3"><img src="images/p2-3.png" alt=""></div>
+            </div>
+            <div class="game-form f hide">
+                <p class="g-f-1">请填写个人信息</p>
+                <p class="g-f-2">以作为领奖依据</p>
+                <div class="g-f-box">
+                    <form action="">
+                        <input class="name form-all" name="name" type="text" placeholder="请输入姓名">
+                        <input class="phone form-all" name="phone" type="text" placeholder="请输入电话">
+                    </form>
+                </div>
+                <p class="g-f-3">离活动结束还有</p>
+                <p class="g-f-4">3天12时45分55秒</p>
+                <div class="g-f-5"><img src="images/p2-3.png" alt=""></div>
+            </div>
+
+            <div class="game-succeed hide">
+                <div class="gs-1"><img src="images/p2-5.png" alt=""></div>
+                <div class="gs-2"><img src="images/p1-2.png" alt=""></div>
+                <div class="gs-3"><img src="images/p2-4.png" alt=""></div>
+            </div>
+
+            <div class="game-ranke hide">
+                <div class="p1-6">
+                    <div class="ranke-box">
+                        <div id="wrapper">
+                            <ul class="s-ul">
+                                <li><span class="s-r">1</span><span class="s-n">名字</span><span class="s-c">score</span></li>
+                                <li><span class="s-r">2</span><span class="s-n">名字</span><span class="s-c">score</span></li>
+                                <li><span class="s-r">3</span><span class="s-n">名字</span><span class="s-c">score</span></li>
+                                <li><span class="s-r">4</span><span class="s-n">名字</span><span class="s-c">score</span></li>
+                                <li><span class="s-r">5</span><span class="s-n">萨达多大时代阿萨德</span><span class="s-c">score</span></li>
+                                <li><span class="s-r">6</span><span class="s-n">A周广路13065484408</span><span class="s-c">score</span></li>
+                                <li><span class="s-r">7</span><span class="s-n">名字</span><span class="s-c">score</span></li>
+                                <li><span class="s-r">8</span><span class="s-n">名字</span><span class="s-c">score</span></li>
+                                <li><span class="s-r">9</span><span class="s-n">名字</span><span class="s-c">score</span></li>
+                                <li><span class="s-r">10</span><span class="s-n">名字</span><span class="s-c">score</span></li>
+                                <li><span class="s-r">11</span><span class="s-n">名字</span><span class="s-c">score</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img class="p1-6-2" src="images/p1-4.png" alt="">
+                </div>
+                <div class="game-footer">
+                    <p>最终排名及获奖名单</p>
+                    <p>将在林肯公园官微公布</p>
+                    <p>微信号:lkgy67877777</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="musicicon musicrotate"></div>
+
+    <audio id="bg" preload="auto"  loop autoplay src="images/bg.mp3" ></audio>
+    <audio id="error" preload="auto"  src="images/error.mp3" ></audio>
+
+</div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/iScroll/5.2.0/iscroll.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://cdn.bootcss.com/PreloadJS/0.4.1/preloadjs.min.js"></script>
+    <script src="js/TranDo.js" ></script>
+    <script src="js/jquery.countdown.js" ></script>
+    <script src="js/TweenMax.min.js" ></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
