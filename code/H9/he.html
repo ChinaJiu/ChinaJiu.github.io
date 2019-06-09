@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MOMA</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <style>
+        .me-main{position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden;}
+        .me-page{position: absolute; left: 50%; top: 50%; width: 640px; height: 1039px; margin: -520px 0 0 -320px;}
+        .me-page{background: url("images/p2-bg.jpg") no-repeat;}
+        .me-page>div{position: absolute; left: 50%; top: 50%;}
+
+        .me-logo{ background: url("images/p2-3.png") no-repeat; width: 179px; height: 93px; margin: -385px 0 0 -90px; }
+        .me-jn{margin: -63px 0 0 0px;}
+        .me-jn>div{position: absolute; left: 50%; top: 50%;}
+        .me-l{background: url("images/p2-7.png") no-repeat; width: 174px; height: 121px; margin: 0px 0 0 -159px;}
+        .me-r{background: url("images/p2-8.png") no-repeat; width: 175px; height: 121px; margin: 0px 0 0 -16px;}
+        .me-1{background-color: #fff; border-radius: 50%; width: 92px; height: 92px; margin: 15px 0 0 -50px;}
+
+        .l-1{background: url("images/g-1.png") no-repeat; width: 313px; height: 374px; position: absolute; left: 0; top: 0; margin: -117px 0 0 124px;}
+        .l-2{background: url("images/g-2.png") no-repeat; width: 312px; height: 373px; position: absolute; left: 0; top: 0; margin: -108px 0 0 -266px;}
+
+        .me-2{width: 640px; height: 100px; margin: -235px 0 0 -320px;}
+        .me-2>p{text-align: center; color: #26baff; opacity: .8;font-family: "Adobe Heiti Std";margin-top: -15px;}
+        .me-p-1{font-size: 30px;}
+        .me-p-2{font-size: 30px;}
+        .me-p-3{font-size: 12px;}
+
+
+        .me-3{width: 640px; height: 100px; margin: 106px 0 0 -320px; color: #fff; opacity: .5;}
+        .me-3>p{text-align: center; color: #fff; opacity: .8;font-family: "Adobe Heiti Std"}
+        .me-p-3{font-size: 15px;}
+        .me-p-4{font-size: 24px;}
+
+        .me-4{background: url("images/he-1.png") no-repeat; width: 217px; height: 70px; margin: 249px 0 0 -107px;}
+        .me-5{background: url("images/logo-2.png") no-repeat; width: 102px; height: 52px; margin: 370px 0 0 -49px;}
+
+        .me-m{width: 108px; height: 108px; background-color: #fff; border-radius: 50%; margin: 123px 0 0 -55px; line-height: 270px; color: #fff;}
+        .me-m-1{position: absolute; margin: 30px 0 0 16px; background: url("images/p3-11-1.png") no-repeat; width: 30px; height: 48px;}
+        .me-m-2{position: absolute; margin: 25px 0 0 58px; background: url("images/p3-11-2.png") no-repeat; width: 27px; height: 55px; overflow: hidden; border-radius: 0 50% 50% 0;}
+        .me-m-3{position: absolute; margin: 25px 0 0 58px; background: url("images/p3-11-2.png") no-repeat; width: 27px; height: 55px; }
+
+
+    </style>
+    <script type="text/javascript">
+        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                var phoneScale = parseInt(window.screen.width)/640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+</head>
+<body>
+
+<div class="me-main">
+    <div class="me-page">
+        <div class="me-logo"></div>
+        <div class="me-2">
+            <p class="me-p-1">您的好友 <span>XXXXXX</span></p>
+            <p class="me-p-2">向您分享了TA在时光里的故事</p>
+            <p class="me-p-3">A gift of time from your friend</p>
+        </div>
+        <div class="me-jn">
+            <div class="me-l">
+                <div class="l-1 hide"></div>
+            </div>
+            <div class="me-r">
+                <div class="l-2 hide"></div>
+            </div>
+            <div class="me-1"></div>
+
+            <div class="me-m hide">
+                <div class="me-m-1"></div>
+                <div class="me-m-2"></div>
+                <div class="me-m-3"></div>
+            </div>
+
+        </div>
+
+        <div class="me-3">
+            <p class="me-p-3">------ 制作时间------</p>
+            <p class="me-p-4">2017·10·17  -  23  ：30</p>
+        </div>
+
+        <div class="me-4"></div>
+        <div class="me-5"></div>
+
+    </div>
+</div>
+
+<script type="text/javascript"  src="js/TweenMax.min.js" ></script>
+<script type="text/javascript"  src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript"  src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script>
+    $(function() {
+        var mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+        var touchstart = mobile ? "touchstart" : "mousedown";
+        var touchend = mobile ? "touchend" : "mouseup";
+        var touchmove = mobile ? "touchmove" : "mousemove";
+        //阻止屏幕滑动
+        $('html,body').on(touchmove, function (e) {
+            e.preventDefault()
+        });
+
+        var me = {
+            t1: new TimelineMax(),
+            t2: new TimelineMax(),
+            t3: new TimelineMax(),
+            g1: new TimelineMax(),
+            g2: new TimelineMax()
+        }
+
+        TweenMax.set('.me-m',{scale:1.5});
+
+        me.t3.from('.me-m-2',.5,{alpha:0,repeatDelay:.1,width:0,repeat:-1})
+        me.t3.pause();
+
+        me.g1.to('.l-1',1,{alpha:0.3,repeat:-1,yoyo:true})
+        me.g1.pause();
+
+        me.g2.to('.l-2',1,{alpha:0.3,repeat:-1,yoyo:true})
+        me.g2.pause();
+
+        me.t1.to('.me-jn',.6,{y:-50})
+        me.t1.to('.me-3',.6,{y:50},'-=.6')
+        me.t1.to('.me-1',.6,{alpha:0})
+        me.t1.to('.me-l',.6,{x:-150})
+        me.t1.to('.me-r',.6,{x:150},'-=.6')
+        me.t1.to('.me-l',.6,{rotation:30},'-=.6')
+        me.t1.to('.me-r',.6,{rotation:-30,onStart:function () {
+            $('.l-1').delay(100).fadeIn()
+            $('.l-2').delay(100).fadeIn(function () {
+                me.g1.play();
+                me.g2.play();
+                $('.me-m').fadeIn()
+            });
+        }},'-=.6')
+        me.t1.pause();
+
+//        点击胶囊
+        $('.me-jn').on(touchstart,function () {
+            me.t1.play()
+        })
+
+//        播放录音
+        $('.me-m').on(touchstart,function (e) {
+            e.stopPropagation()
+            if( $('.me-m-3').hasClass('hide') ){
+                $('.me-m-3').removeClass('hide')
+                me.t3.stop()
+            }else {
+                $('.me-m-3').addClass('hide')
+                me.t3.restart()
+            }
+        })
+
+        $('.me-4').on(touchstart,function () {
+            location.href = 'index.html'
+        })
+
+    })
+</script>
+<script>
+
+</script>
+</body>
+</html>

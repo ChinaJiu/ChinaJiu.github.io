@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<audio controls id="a" src="a.mp3"></audio>
+<script>
+
+    var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    var myAudio = document.querySelector('audio');
+    var myScript = document.querySelector('script');
+
+    var source = audioCtx.createMediaElementSource(myAudio);
+    // Create a gain node
+    var gainNode = audioCtx.createGain();
+//    var CurY;
+//    var HEIGHT = window.innerHeight;
+    // Get new mouse pointer coordinates when mouse is moved
+    // then set new gain value
+
+//    document.onmousemove = updatePage;
+
+//    function updatePage(e) {
+//        CurY = (window.Event) ? e.pageY : event.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
+
+        gainNode.gain.value = 1
+        myAudio.volume = 1;
+//    }
+
+
+    // connect the AudioBufferSourceNode to the gainNode
+    // and the gainNode to the destination, so we can play the
+    // music and adjust the volume using the mouse cursor
+    source.connect(gainNode);
+    gainNode.connect(audioCtx.destination);
+
+
+
+
+
+
+</script>
+</body>
+</html>
