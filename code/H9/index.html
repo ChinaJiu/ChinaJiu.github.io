@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MOMA</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script type="text/javascript">
+        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                var phoneScale = parseInt(window.screen.width)/640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+</head>
+<body>
+
+<div class="loading">
+    <div class="loadingtxt">0%</div>
+</div>
+
+<div class="main hide">
+    <div class="page" id="page">
+
+        <div class="page1">
+            <div class="p1-1"></div>
+            <div class="p1-3 hide"></div>
+            <div class="p1-4 f2"></div>
+            <div class="p1-5 hide"></div>
+
+            <div id="container">
+            </div>
+
+            <div class="p1-2"></div>
+            <div class="p6">
+                <div class="p1-6-1"></div>
+                <div class="p1-6-2"></div>
+                <div class="p1-6-3"></div>
+                <div class="p1-6-4"></div>
+                <div class="p1-6-5"></div>
+            </div>
+
+            <div class="box-2">
+                <div class="p1-7"></div>
+                <div class="p1-8"></div>
+                <div class="numadd">
+                    <div class="numBox1">
+                        <div class="numBox-page1">
+                        </div>
+                    </div>
+                    <div class="numBox2">
+                        <div class="numBox-page2">
+                        </div>
+                    </div>
+                    <div class="numBox3">
+                        <div class="numBox-page3">
+                        </div>
+                    </div>
+                    <div class="numBox4">
+                        <div class="numBox-page4">
+                        </div>
+                    </div>
+                    <div class="numBox5">
+                        <div class="numBox-page5">
+                        </div>
+                    </div>
+                    <div class="numBox6">
+                        <div class="numBox-page6">
+                        </div>
+                    </div>
+                    <div class="numBox7">
+                        <div class="numBox-page7">
+                        </div>
+                    </div>
+                    <div class="numBox8">
+                        <div class="numBox-page8">
+                        </div>
+                    </div>
+                    <div class="numBox9">
+                        <div class="numBox-page9">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-3">
+                <div class="p1-12"></div>
+                <div class="p1-10"></div>
+                <div class="p1-11"></div>
+                <div class="p1-13"></div>
+                <div class="p1-14">
+                    <div class="p1-14-1"></div>
+                    <div class="p1-14-2"></div>
+                    <div class="p1-14-3"></div>
+                    <div class="p1-14-4"></div>
+                </div>
+            </div>
+
+            <div class="box-4 hide">
+                <div class="p2-1"></div>
+                <div class="p2-2"></div>
+                <div class="p2-3"></div>
+                <div class="p2-4"></div>
+                <div class="p2-5"></div>
+                <div class="p2-6-1"></div>
+                <div class="p2-6">
+                    <div class="p2-6-2"></div>
+                    <div class="p2-6-3"></div>
+                    <div class="p2-6-4"></div>
+                    <div class="p2-6-5"></div>
+                    <div class="p2-6-6"></div>
+                    <div class="p2-6-7"></div>
+                </div>
+                <div class="jn">
+                    <div class="p2-7">
+                        <div class="g-1 hide"></div>
+                    </div>
+                    <div class="p2-8">
+                        <div class="g-2 hide"></div>
+                    </div>
+                    <div class="p2-9"></div>
+                    <div class="p2-t-1">点击接收胶囊</div>
+                </div>
+
+                <div class="p2-10">
+                    <div class="p2-10-1 k1"></div>
+                    <div class="p2-10-2 k2"></div>
+                    <div class="p2-10-3 k3"></div>
+                    <div class="p2-10-4 k4"></div>
+                    <div class="p2-10-5 k5"></div>
+                    <div class="p2-10-6 k6"></div>
+                </div>
+            </div>
+
+            <div class="box-5 hide">
+                <div class="p3-1">
+                    <div class="p3-1-1"></div>
+                    <div class="p3-1-2"></div>
+                    <div class="p3-1-3"></div>
+                    <div class="p3-1-4"></div>
+                </div>
+                <div class="p3-2-1"></div>
+                <div class="p3-2-2"></div>
+                <div class="p3-3"></div>
+
+                <div class="p3-5" d-date="l"></div>
+                <div class="p3-6" d-date="r"></div>
+            </div>
+            <div class="box-6 hide">
+                <div class="p3-7"></div>
+                <div class="p3-8"></div>
+                <div class="p3-8-1"></div>
+                <div class="p3-8-2"></div>
+
+                <div class="p3-7-t"></div>
+                <div class="p3-8-t"></div>
+                <div class="p3-8-1-t"></div>
+                <div class="p3-8-2-t"></div>
+
+                <div class="p3-10"></div>
+                <div class="p3-9">30s</div>
+
+                <div class="p3-11">
+                    <div class="p3-11-1"></div>
+                    <div class="p3-11-3"></div>
+                    <div class="p3-11-2"></div>
+                    <span>试听</span>
+                </div>
+                <div class="p3-12">
+                    <div class="p3-12-1"></div>
+                    <span>重录</span>
+                </div>
+                <div class="p3-13"></div>
+                <div class="back">返回</div>
+            </div>
+
+            <div class="box-7 hide">
+                <div class="p4-1"></div>
+                <div class="p4-2">
+                    <p class="p1">------ 制作时间------</p>
+                    <p class="p2">2017·10·17  -  23  ：30</p>
+                </div>
+                <div class="p4-3"><img src="" alt=""></div>
+
+                <div class="p4-3-1"></div>
+                <div class="p4-3-2"></div>
+                <div class="jn-end">
+                    <div class="jn-end-r"></div>
+                    <div class="jn-end-l"></div>
+                    <div class="id"></div>
+                </div>
+                <div class="p4-4">
+                    <p class="p-3">这份蕴含着惊喜与期许的礼物</p>
+                    <p class="p-4"></p>
+                </div>
+                <div class="p4-6"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="up hide"></div>
+    <div class="logo"></div>
+    <div class="musicicon musicrotate">
+        <div class="musicicon2"></div>
+        <div class="musicicon3"></div>
+    </div>
+    <audio id="bg" preload="auto" loop  src="images/music1.mp3" ></audio>
+    <audio id="music2" preload="auto"  src="" ></audio>
+</div>
+
+<script type="text/javascript"  src="js/TweenMax.min.js" ></script>
+<script type="text/javascript"  src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript"  src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script type="text/javascript"  src="https://cdn.bootcss.com/PreloadJS/0.4.1/preloadjs.min.js"></script>
+<script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="js/TranDo.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+
+</script>
+</body>
+</html>
